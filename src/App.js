@@ -53,31 +53,22 @@ function App() {
     
     // </>
     
-      // <>
-      //   <Router>
-      //     <Navbar title="Case Converter" mode={mode} toggleMode={toggleMode} />
-      //     <Alert alert={alert} />
-      //     <div className="container my-3">
-      //       <Routes>
-      //         <Route exact path="/case-converter" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
+      <>
+        <Router>
+          <Navbar title="Case Converter" mode={mode} toggleMode={toggleMode} />
+          <Alert alert={alert} />
+          <div className="container my-3">
+            <Routes>
+              <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
             
-      //       </Routes>
-      //     </div>
-      //   </Router>
-      // </>
+            </Routes>
+          </div>
+        </Router>
+      </>
     
+ 
 
-    // vercel k liye change kiya
-
-<Router basename="/case-converter">
-  <Navbar title="Case Converter" mode={mode} toggleMode={toggleMode} />
-  <Alert alert={alert} />
-  <div className="container my-3">
-    <Routes>
-      <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
-    </Routes>
-  </div>
-</Router>
+ 
 
 
   );
